@@ -10,9 +10,9 @@ import java.util.List;
 //Находясь в среде разработки, табуляция у этого класса нормальная, но на гите она почему-то сдвигается
 @Controller
 public class HelloController {
-
+	
 	@GetMapping(value = "/")
-	public String printWelcome(ModelMap model) {
+		public String printWelcome(ModelMap model) {
 		List<String> messages = new ArrayList<>();
 		messages.add("Hello!");
 		messages.add("I'm Spring MVC application");
