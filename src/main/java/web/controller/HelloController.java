@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Controller
 public class HelloController {
 
@@ -19,5 +20,4 @@ public class HelloController {
 		model.addAttribute("messages", messages);
 		return "index";
 	}
-	
 }
