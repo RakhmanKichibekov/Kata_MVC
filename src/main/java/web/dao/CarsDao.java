@@ -5,6 +5,7 @@ import web.model.Car;
 import java.util.List;
 
 public interface CarsDao {
-    void addCars();
+    void add(Car car);
+    void clearCars();
     List<Car> getCars();
 }

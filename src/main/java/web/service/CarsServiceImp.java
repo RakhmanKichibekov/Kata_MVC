@@ -18,8 +18,17 @@ public class CarsServiceImp implements CarsService {
     }
 
     @Override
+    public void addCar(Car car) {
+        carsDao.add(car);
+    }
+
+    @Override
+    public void clearCars() {
+        carsDao.clearCars();
+    }
+
+    @Override
     public List<Car> getCarsCount(Integer count) {
-        carsDao.addCars();
         List<Car> cars = carsDao.getCars();
         if (count != null) {
             if (count > cars.size()) {
